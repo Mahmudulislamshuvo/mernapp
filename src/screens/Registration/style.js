@@ -19,9 +19,14 @@ const Singup = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  contentText: {
-    backgroundColor: 'red',
-    opacity: 0.5,
+  title: {
+    fontSize: 36,
+    fontWeight: 'bold',
+    color: 'white',
+    paddingBottom: 10,
+  },
+  titleDes: {
+    fontSize: 16,
     color: 'white',
   },
 });

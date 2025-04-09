@@ -1,4 +1,4 @@
-import {ImageBackground, Text, View} from 'react-native';
+import {ImageBackground, Text, TextInput, View} from 'react-native';
 import React from 'react';
 import {Singup} from './style';
 
@@ -14,7 +14,15 @@ const Registration = () => {
         <View style={Singup.overlay}></View>
       </View>
       <View style={Singup.textContainer}>
-        <Text style={Singup.contentText}>create account</Text>
+        <View>
+          <View style={{paddingVertical: 20}}>
+            <Text style={Singup.title}>Create an account</Text>
+            <Text style={Singup.titleDes}>Enter your details below</Text>
+          </View>
+          <View>
+            <TextInput style={Singup.input} placeholder="sHVO" />
+          </View>
+        </View>
       </View>
     </View>
   );
