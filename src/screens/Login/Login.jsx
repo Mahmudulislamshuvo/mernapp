@@ -9,6 +9,9 @@ import React from 'react';
 import {loginStyle} from './style';
 
 const Login = ({navigation}) => {
+  const handleLogin = () => {
+    navigation.navigate('Home');
+  };
   return (
     <View>
       <View>
@@ -39,7 +42,9 @@ const Login = ({navigation}) => {
           </View>
           <View>
             <TouchableOpacity style={loginStyle.submitButton}>
-              <Text style={loginStyle.submitButtonText}>Create Account</Text>
+              <Text onPress={handleLogin} style={loginStyle.submitButtonText}>
+                Login
+              </Text>
             </TouchableOpacity>
             <View style={loginStyle.googleButton}>
               <Text style={loginStyle.googleButtonText}>Login with Google</Text>
