@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-const Singup = StyleSheet.create({
+export const loginStyle = StyleSheet.create({
   image: {
     width: '100%',
     height: '100%',
@@ -80,5 +80,3 @@ const Singup = StyleSheet.create({
     textAlign: 'center',
   },
 });
-
-export {Singup};
